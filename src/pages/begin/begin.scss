@@ -1,0 +1,21 @@
+.modal__login {
+    position: relative;
+    //transform: translateY(-35rem);
+    animation: modelFadeIn ease .8s;
+    font-family: 'ProximaNova', Arial, Tahoma, PingFangSC, sans-serif;
+    //font-family:Verdana, Geneva, Tahoma, sans-serif;
+    //font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes modelFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-35rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
