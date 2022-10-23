@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import images from '../../assets/images/image';
 import "./begin.scss";
 
@@ -16,7 +17,7 @@ const Begin = () => {
                     <div className='max-w-[900px] h-[500px] mx-auto bg-slate-300 text-white modal__login rounded-xl flex items-center justify-center'>
                         <form action="">
                             <div className='h-[450px] w-[360px] bg-slate-100 mr-8 rounded-2xl'>
-                                <h1 className='text-black/80 text-3xl font-bold text-start pt-8 pl-4'>Login</h1>
+                                <h1 className='text-black/80 text-3xl font-bold text-start pt-6 pl-4'>Login</h1>
                                 <div className='pl-4 mt-5'>
                                     <label htmlFor="" className='text-gray-500 text-lg font-semibold'>Username</label>
                                     <input
@@ -38,7 +39,7 @@ const Begin = () => {
                                         <input type="checkbox" className='mr-2 p-2' />Remember me
                                     </div>
                                     <div className='pr-6'>
-                                        <a href="/" className='underline underline-offset-1 decoration-sky-500 text-blue-300'>Forgot Password?</a>
+                                        <a href="/" className='underline underline-offset-1 decoration-sky-500 text-blue-300 hover:opacity-70'>Forgot Password?</a>
                                     </div>
                                 </div>
                                 <button
@@ -46,6 +47,10 @@ const Begin = () => {
                                 >
                                     LOGIN
                                 </button>
+                                <div className='pl-4 mt-5'>
+                                    <h4 className='text-black/50 font-semibold'>Doesn't have an account yet?
+                                    <Link to='/dangky' className='underline underline-offset-1 text-sky-600  decoration-sky-600 hover:opacity-70'>Sign Up</Link></h4>
+                                </div>
                             </div>
                         </form>
                         <img
